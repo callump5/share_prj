@@ -1,0 +1,25 @@
+{% extends 'home/index.html' %}
+{% load staticfiles %}
+
+    {% block head_js %}
+       <script src="{% static 'js/tinymce/tinymce.min.js' %}"></script>
+       <script>
+           tinyMCE.init({mode: "textareas", theme: 'modern', plugins: 'paste'})
+       </script>
+    {% endblock %}
+
+    {% block content %}
+
+        {% for testimony in list %}
+            <div class="testimony">
+                <h2>{{ testimony }}</h2>
+            <br>
+
+                {% autoescape off %}
+                    {{ testimony.content }}
+                {% endautoescape %}
+            </div>
+
+        {% endfor %}
+
+    {% endblock %}

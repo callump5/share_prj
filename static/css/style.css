@@ -1,0 +1,58 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 10vh;
+
+
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
+    background: rgb(122,188,255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgb(233, 228, 255) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgb(233, 228, 255) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgb(233, 228, 255) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#landing {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#landing .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2.5vh;
+}
+
+.icon {
+    height: 10vh;
+    width: 10vh;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-content: center;
+    justify-content: center;
+}
+.glyphicon:hover{
+    cursor: hand;
+}
+.glyphicon {
+    font-size: 2em;
+    color: #fffa67;
+}
+
+.blue {
+    color: #00008b;
+}
+
