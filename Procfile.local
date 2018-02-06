@@ -1,0 +1,1 @@
+web: gunicorn share_prj.wsgi:application

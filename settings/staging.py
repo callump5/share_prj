@@ -9,8 +9,8 @@ DATABASES = {
     }
 }
 
-SITE_URL = 'https://your-heroku-app.herokuapp.com'
-ALLOWED_HOSTS.append('your-heroku-app.herokuapp.com')
+SITE_URL = 'https://share-respite-basildon.herokuapp.com'
+ALLOWED_HOSTS.append('share-respite-basildon.herokuapp.com')
 
 # Log DEBUG information to the console
 LOGGING = {
