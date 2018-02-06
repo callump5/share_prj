@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.views.static import serve
+
+from .settings import MEDIA_ROOT
 
 from home import views as home_view
 
@@ -29,5 +32,12 @@ urlpatterns = [
     url(r'^$', home_view.get_home),
 
     # Testimonials
-    url(r'', include('testimonials.urls'))
+    url(r'', include('testimonials.urls')),
+
+    # Staff Details
+    url(r'', include('gallery.urls')),
+
+    # Media Root
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
+
 ]

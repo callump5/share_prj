@@ -1,0 +1,15 @@
+{%  extends 'home/index.html' %}
+
+{% block content %}
+
+
+    {% for staff in staff %}
+        <div class="staff-details">
+            <h1>{{ staff.user }}</h1>
+            <img src="/media/{{ staff.staff_image }}">
+        </div>
+    {% endfor %}
+
+
+
+{% endblock %}
