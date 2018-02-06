@@ -1,1 +1,1 @@
-web: gunicorn share_prj.wsgi:application --setting=settings.staging
+web: gunicorn share_prj.wsgi:application
