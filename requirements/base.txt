@@ -1,0 +1,8 @@
+Django
+Pillow
+django-tinymce
+pip
+pytz
+setuptools
+wheel
+wsgiref
