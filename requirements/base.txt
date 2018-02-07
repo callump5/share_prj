@@ -6,4 +6,3 @@ pytz
 setuptools
 wheel
 wsgiref
-gunicorn==19.4

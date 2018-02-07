@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+.idea/preferred-vcs.xml
+.idea/workspace.xml
+accounts/__init__.pyc
+gallery/__init__.pyc
+home/__init__.pyc
+settings/__init__.pyc
+settings/base.pyc
+settings/dev.pyc
+testimonials/__init__.pyc
