@@ -13,3 +13,4 @@ pytz
 six
 virtualenv
 Werkzeug
+whitenoise
