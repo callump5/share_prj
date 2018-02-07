@@ -1,6 +1,5 @@
 click
 Django
-django-disqu
 django-tinymce
 funcsigs
 gunicorn==19.4.0
