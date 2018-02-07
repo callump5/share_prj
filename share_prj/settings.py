@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'share-basildon.herokuapp.com',
+    '127.0.0.1',
 ]
 
 
