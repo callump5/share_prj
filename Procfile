@@ -1,1 +1,1 @@
-web: gunicorn share_prj.wsgi --log-file -
+web: gunicorn share_prj.wsgi :app
