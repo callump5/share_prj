@@ -21,7 +21,6 @@ from .settings import MEDIA_ROOT
 
 from home import views as home_view
 
-
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
