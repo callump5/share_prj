@@ -25,7 +25,9 @@ SECRET_KEY = '1r@%#0jeyk7q5eh&$2s4-^8lgx1sb+312x%mt(clfefi8whau7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    share-basildon.herokuapp.com
+]
 
 
 # Application definition
