@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 import dj_database_url
-import dropbox
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -48,7 +47,6 @@ INSTALLED_APPS = [
     'gallery',
     'tinymce',
     'storages',
-    'dropbox',
 ]
 
 MIDDLEWARE = [
@@ -151,15 +149,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 MEDIA_URL = '/media/'
 
-
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min.js')
-
-
-DROPBOX_OAUTH2_TOKEN = 'Gv9QEyqRcdAAAAAAAAAGAc0xZ0OU0cC0nWX8Xg75KBP9VXeN5Wqq9gd_aEkUpn84'
-dbx = dropbox.DropboxOAuth2Flow = 'Gv9QEyqRcdAAAAAAAAAGAc0xZ0OU0cC0nWX8Xg75KBP9VXeN5Wqq9gd_aEkUpn84'
-DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-
 
 
