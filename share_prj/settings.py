@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'gallery',
     'tinymce',
     'storages',
+    'dropbox',
 ]
 
 MIDDLEWARE = [
