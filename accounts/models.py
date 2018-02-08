@@ -5,8 +5,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from tinymce.models import HTMLField
 
-import dropbox
-from share_prj.settings import dbx
 # Create your models here.
 
 class Staff_Details(models.Model):
