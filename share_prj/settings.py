@@ -156,6 +156,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min.js')
 
+dropbox.Dropbox('Gv9QEyqRcdAAAAAAAAAGAc0xZ0OU0cC0nWX8Xg75KBP9VXeN5Wqq9gd_aEkUpn84')
 
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
+
+
 
