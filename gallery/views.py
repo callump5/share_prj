@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-from accounts.models import Staff_Details
+from .models import Staff_Details
 # Create your views here.
 
 def get_staff(request):
