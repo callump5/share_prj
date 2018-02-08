@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 import dj_database_url
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -156,13 +157,6 @@ MEDIA_URL = '/media/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min.js')
-
-
-DROPBOX_APP_KEY = "mim4m90ktsrwisn"
-DROPBOX_APP_SECRET_KEY = "e9nij0fcllyv7ji"
-DROPBOX_APP_ACCESS_TOKEN = "Gv9QEyqRcdAAAAAAAAAGAmGWA7N1BfDWs20t1RewBfQeu_JIGHbqodehcgcnfWEo"
-DROPBOX_APP_ACCESS_TOKEN_SECRET = ""
-
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 AWS_S3_SECURE_URLS = False       # use http instead of https

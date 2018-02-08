@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'home/index.html' %}
 
-</body>
-</html>
+{% block content %}
+
+    {% for student in students %}
+        <div class="gallery-img">
+            <h1>{{ student.title }}</h1>
+            <img src="{{ student.image.url }}">
+        </div>
+    {% endfor %}
+    
+{% endblock %}
