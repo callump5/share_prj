@@ -86,6 +86,7 @@ WSGI_APPLICATION = 'share_prj.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+
 """
 DATABASES = {
     'default': {
@@ -99,6 +100,7 @@ DATABASES = {
 DATABASES = {
     'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
+
 
 
 # Password validation
@@ -160,8 +162,4 @@ DROPBOX_APP_SECRET_KEY = "e9nij0fcllyv7ji"
 DROPBOX_APP_ACCESS_TOKEN = "Gv9QEyqRcdAAAAAAAAAGAmGWA7N1BfDWs20t1RewBfQeu_JIGHbqodehcgcnfWEo"
 DROPBOX_APP_ACCESS_TOKEN_SECRET = ""
 
-
-FILE_UPLOAD_HANDLERS = (
-    "share_prj.dropbox_upload_handler.DropboxFileUploadHandler",
-)
 
