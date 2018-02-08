@@ -5,6 +5,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from tinymce.models import HTMLField
 
+from share_prj.dropbox_upload_handler import upload_file
+
 # Create your models here.
 
 class Staff_Details(models.Model):
@@ -14,3 +16,6 @@ class Staff_Details(models.Model):
 
     def __unicode__(self):
         return self.user.username
+
+    upload_file()
+
