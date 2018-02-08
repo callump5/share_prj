@@ -57,7 +57,7 @@ body {
 }
 
 
-.staff-details img{
+.staff-details img, .gallery-img img{
    width: 250px;
     height: auto;
 }
