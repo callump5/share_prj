@@ -17,3 +17,4 @@ whitenoise
 dj-database-url==0.2.1
 django-storages
 dropbox
+boto

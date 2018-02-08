@@ -6,7 +6,7 @@
     {% for staff in staff %}
         <div class="staff-details">
             <h1>{{ staff.user }}</h1>
-            <img src="/media/{{ staff.staff_image }}">
+            <img src="{{ staff.staff_image.url }}">
         </div>
     {% endfor %}
 

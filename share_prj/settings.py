@@ -163,3 +163,9 @@ DROPBOX_APP_ACCESS_TOKEN = "Gv9QEyqRcdAAAAAAAAAGAmGWA7N1BfDWs20t1RewBfQeu_JIGHbq
 DROPBOX_APP_ACCESS_TOKEN_SECRET = ""
 
 
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+AWS_S3_SECURE_URLS = False       # use http instead of https
+AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related query parameters for requests
+AWS_S3_ACCESS_KEY_ID = 'AKIAJCDJLSNBZQ5IM5WA'     # enter your access key id
+AWS_S3_SECRET_ACCESS_KEY = 'c4MgQgGvlbLQgVOSWu+iLVaU85XijthnMGE7tuSu' # enter your secret access key
+AWS_STORAGE_BUCKET_NAME = 'sharegallerymedia'
