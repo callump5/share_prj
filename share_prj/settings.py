@@ -161,6 +161,4 @@ TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 AWS_S3_SECURE_URLS = False       # use http instead of https
 AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related query parameters for requests
-AWS_S3_ACCESS_KEY_ID = 'AKIAJWRCIJ6OOGGVR2ZQ'
-AWS_S3_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = 'sharegallerymedia'
