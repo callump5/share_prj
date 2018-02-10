@@ -17,4 +17,6 @@ whitenoise
 dj-database-url==0.2.1
 django-storages
 dropbox
+django-bootstrap-forms
+django-forms-bootstrap
 boto

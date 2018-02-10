@@ -1,0 +1,9 @@
+{% extends "home/index.html" %}
+{% block content %}
+    {% load bootstrap_tags %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form | as_bootstrap }}
+        <button type="submit" class="btn">Save</button>
+    </form>
+{% endblock %}

@@ -36,6 +36,9 @@ urlpatterns = [
     # Staff Details
     url(r'', include('gallery.urls')),
 
+    # Contact Us
+    url(r'', include('contact_us.urls')),
+
     # Media Root
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
 
