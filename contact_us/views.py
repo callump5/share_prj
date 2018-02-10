@@ -30,7 +30,7 @@ def contact_us(request):
                 'Contact Request',
                 message,
                 'clpullinger@gmail.com',
-                ['']
+                ['clpullinger@gmail.com']
             )
 
         messages.success(request, 'Thanks for getting in touch!')
