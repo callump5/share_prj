@@ -3,37 +3,37 @@
 
 {% block content %}
 
+
     <div id="landing">
+        <img class="slides w3-animate-fading" src="/static/imgs/landing/back1.jpg">
+        <img class="slides w3-animate-fading" src="/static/imgs/landing/back2.jpg">
+        <img class="slides w3-animate-fading" src="/static/imgs/landing/back3.jpg">
+        <img class="slides w3-animate-fading" src="/static/imgs/landing/back4.jpg">
+        <img class="slides w3-animate-fading" src="/static/imgs/landing/back5.jpg">
+        <img class="slides w3-animate-fading" src="/static/imgs/landing/back8.jpg">
+        <img class="slides w3-animate-fading" src="/static/imgs/landing/back7.jpg">
+
         <div class="container">
             <img id=logo src="/static/imgs/Logo2.png">
-
-            <div id="nav-icons">
-                <div class="icon container">
-                    <a><span class="glyphicon glyphicon-home"></span></a>
-                </div>
-
-                <div class="icon container">
-                    <a href="/staff/"><span class="glyphicon glyphicon-user blue"></span>
-                    <h2>Staff</h2></a>
-                </div>
-
-                <div class="icon container">
-                    <a href="/testimonials/"><span class="glyphicon glyphicon-file"></span>
-                    <h2>Testimonials</h2></a>
-                </div>
-
-                <div class="icon container">
-                    <a href="/student/gallery/"><span class="glyphicon glyphicon-th-large blue"></span></a>
-                    <h2>Gallery</h2>
-                </div>
-
-                <div class="icon container">
-                    <a href="/contact-us/"><span class="glyphicon glyphicon-envelope"></span></a>
-                </div>
-            </div>
-
-
         </div>
     </div>
+
+    <script type="text/javascript">
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 7000); // Change image every 2 seconds
+        }
+
+    </script>
 {% endblock %}
 

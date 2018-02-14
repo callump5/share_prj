@@ -1,61 +1,25 @@
 body {
     height: 100vh;
     width: 100vw;
-    padding-top: 10vh;
-
-
-   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
-    background-image: url("/static/imgs/share.png");
-    background-size: cover;
 }
 
-#landing {
-    display: flex;
-    flex-direction: column;
+#landing .container img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transform: scale(0.8);
+
 }
 
-
-#landing .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#nav-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 2.5vh;
-}
-
-.icon {
-    height: 10vh;
-    width: 10vh;
-    margin: 10px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    align-content: center;
-    justify-content: center;
-}
-.glyphicon:hover{
-    cursor: hand;
-}
-.glyphicon {
-    font-size: 2em;
-    color: #fffa67;
-}
-
-.blue {
-    color: #00008b;
-}
 
 
 .staff-details img, .gallery-img img{
    width: 250px;
     height: auto;
+}
+
+.slides {
+    width: 100vw;
+    height: 100vh;
 }
 
