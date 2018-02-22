@@ -90,8 +90,9 @@ WSGI_APPLICATION = 'share_prj.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 
-"""
 
+
+"""
 
 DATABASES = {
     'default': {
@@ -105,6 +106,7 @@ DATABASES = {
 DATABASES = {
     'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
+
 
 
 
@@ -160,12 +162,12 @@ MEDIA_URL = '/media/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min.js')
-
+"""
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 AWS_S3_SECURE_URLS = False       # use http instead of https
 AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related query parameters for requests
 AWS_STORAGE_BUCKET_NAME = 'sharegallerymedia'
-
+"""
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 

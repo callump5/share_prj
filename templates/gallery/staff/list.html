@@ -1,14 +1,75 @@
 {%  extends 'home/index.html' %}
 
+{% block head_css %}
+    <style type="text/css">
+        body {
+            background-color: #e0e0e0;
+        }
+    </style>
+{% endblock %}
+
+{% block head_js %}
+
+    <script type="text/javascript">
+
+        $(document).on('mouseover', '.staff-details', function () {
+            thisimg = $(this);
+
+            $(this)
+                .find('img')
+                .fadeTo(200, 0);
+
+            $(this)
+                .find('.bio')
+                .css('top', thisimg.offset().top)
+                .css('display', 'flex')
+                .fadeTo(200, 1);
+        });
+
+        $(document).on('mouseleave', '.staff-details', function () {
+            thisimg = $(this);
+
+            $(this)
+                .find('img')
+                .fadeTo(200, 1);
+
+            $(this)
+                .find('.bio')
+                .fadeTo(200, 0);
+        });
+
+
+    </script>
+{% endblock %}
+
 {% block content %}
 
+    <div class="container">
 
-    {% for staff in staff %}
-        <div class="staff-details">
-            <h1>{{ staff.user }}</h1>
-            <img src="{{ staff.staff_image.url }}">
+        <h1 class="title">Meet Our Staff</h1>
+
+        <div id="staff" class="container">
+            {% for staff in staff %}
+                <div class="staff-profile">
+                    <div class="staff-details">
+                        <img class='img' src="{{ staff.staff_image.url }}">
+
+                        {% autoescape off %}
+                            <div class="bio">
+                                <p>{{ staff.bio }}</p>
+                            </div>
+                        {% endautoescape %}
+                    </div>
+                    <h1>{{ staff.user }}</h1>
+
+                </div>
+
+            {% endfor %}
+
         </div>
-    {% endfor %}
+    </div>
+
+
 
 
 

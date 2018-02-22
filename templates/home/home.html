@@ -1,39 +1,82 @@
 {% extends 'home/index.html' %}
 
-
-{% block content %}
-
-
-    <div id="landing">
-        <img class="slides w3-animate-fading" src="/static/imgs/landing/back1.jpg">
-        <img class="slides w3-animate-fading" src="/static/imgs/landing/back2.jpg">
-        <img class="slides w3-animate-fading" src="/static/imgs/landing/back3.jpg">
-        <img class="slides w3-animate-fading" src="/static/imgs/landing/back4.jpg">
-        <img class="slides w3-animate-fading" src="/static/imgs/landing/back5.jpg">
-        <img class="slides w3-animate-fading" src="/static/imgs/landing/back8.jpg">
-        <img class="slides w3-animate-fading" src="/static/imgs/landing/back7.jpg">
-
-        <div class="container">
-            <img id=logo src="/static/imgs/Logo2.png">
-        </div>
-    </div>
+{% block head_js %}
 
     <script type="text/javascript">
-        var slideIndex = 0;
-        carousel();
+        $(document).on('click', '.thumb', function () {
 
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("slides");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
+            var img = $('#landing-img').attr('src');
+            var thumbsrc = this.src;
+            var thumb = this;
+
+            if (thumbsrc != img) {
+
+                $('#landing-img').fadeOut(function () {
+                    $(this).attr('src', thumbsrc);
+                    $(this).fadeIn();
+                    $('.active').fadeTo(200, 1).removeClass('active');
+                    $(thumb).fadeTo(200, 0.3).addClass('active');
+                });
+
+                $('#background-img').fadeOut(function () {
+                    $(this).attr('src', thumbsrc);
+                    $(this).fadeIn();
+
+                })
             }
-            slideIndex++;
-            if (slideIndex > x.length) {slideIndex = 1}
-            x[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 7000); // Change image every 2 seconds
-        }
+        });
 
     </script>
 {% endblock %}
+
+{% block content %}
+    
+    <img id="background-img" src="/static/imgs/landing/back1.jpg">
+
+    <div id="landing" class="container">
+        <div id="photo-viewer">
+            <img id="landing-img" src="/static/imgs/landing/back1.jpg">
+
+            <div id="logo">
+                <img src="/static/imgs/Logo2.png">
+                <h1>Safe Haven & Respite Enviroment</h1>
+            </div>
+        </div>
+
+
+
+        <div id="bar">
+
+            <div id="thumbnails">
+                <img class="thumb active" src="/static/imgs/landing/back1.jpg">
+
+                <img class="thumb" src="/static/imgs/landing/back2.jpg">
+
+                <img class="thumb" src="/static/imgs/landing/back3.jpg">
+
+                <img class="thumb" src="/static/imgs/landing/back4.jpg">
+
+                <img class="thumb" src="/static/imgs/landing/back5.jpg">
+
+                <img class="thumb" src="/static/imgs/landing/back8.jpg">
+
+                <img class="thumb" src="/static/imgs/landing/back7.jpg">
+            </div>
+
+            <div id="nav">
+                <a><span class="glyphicon glyphicon-home"></span></a>
+                <a href="/staff/" ><span class="glyphicon glyphicon-user"></span></a>
+                <a href="/testimonials/"><span class="glyphicon glyphicon-file"></span></a>
+                <a href="/student/gallery"><span class="glyphicon glyphicon-picture"></span></a>
+                <a href="/contact-us/"><span class="glyphicon glyphicon-pencil"></span></a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}
+
+Lorem
 

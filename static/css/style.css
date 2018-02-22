@@ -1,25 +1,163 @@
-body {
-    height: 100vh;
+
+.container {
+    margin-top: 35px;
+}
+/* Landing */
+
+#background-img {
     width: 100vw;
-}
-
-#landing .container img {
+    height: 100vh;
     position: absolute;
-    top: 5px;
-    left: 5px;
-    transform: scale(0.8);
+    top: 0;
+    z-index: -100;
+}
 
+#landing{
+    width: 80vw;
+    min-width: 600px;
+    max-width: 933px;
+    margin-top: 80px;
+    background-color: rgb(42, 179, 255);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 
+#photo-viewer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.62);
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
-.staff-details img, .gallery-img img{
-   width: 250px;
+#landing-img {
+    width: 50vw;
+    height: 50vh;
+    max-height: 330px;
+}
+
+#logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-right: 0;
+}
+#logo img {
+    width: 25vw;
     height: auto;
 }
 
-.slides {
-    width: 100vw;
-    height: 100vh;
+#logo h1 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 20px;
 }
 
+.active {
+    opacity: 0.3;
+}
+
+#thumbnails {
+    height: 80px;
+}
+
+.thumb {
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#bar {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#nav a span {
+    font-size: 2.5em;
+    margin: 0 10px;
+    color: #ebe733;
+}
+
+/* Staff Imagees */
+
+.title {
+    font-size: 2em;
+    text-align: center;
+}
+
+#staff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 80%;
+    margin-top: 30px;
+
+}
+
+.staff-profile {
+    margin-bottom: 15px;
+}
+.staff-details {
+    margin: 5px;
+}
+.staff-details img {
+    width: 250px;
+    height:300px;
+}
+.staff-profile h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.bio {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    padding: 50px 10px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5bc0de;
+
+}
+
+@media screen and (max-width:600px) {
+
+    #landing {
+        min-width: 200px;
+    }
+    #logo {
+        display: none;
+        width: 0;
+    }
+
+    #landing-img {
+        width: 100%;
+    }
+
+
+}
