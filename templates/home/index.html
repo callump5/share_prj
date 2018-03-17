@@ -29,10 +29,32 @@
 </head>
 <body>
 
+    <nav>
+        <div class="brand">
+            <img src="/static/imgs/Logo2.png">
+        </div>
 
-{% block content %}
+        <div class="nav-links">
+            <a class="nav-btn active">Home</a>
+            <a class="nav-btn">Testimonials</a>
+            <a class="nav-btn">About Us</a>
+            <a  href="/staff/" class="nav-btn">Meet Our Staff</a>
+            <a class="nav-btn">Information</a>
+            <a class="nav-btn">Contact Us</a>
+        </div>
 
-{% endblock %}
+
+        <div class="social">
+            <div class="s-link"><img src="/static/imgs/icons/Facebook.png"><a>Facebook</a></div>
+            <div class="s-link"><img src="/static/imgs/icons/Twitter.png"><a>Twitter</a></div>
+        </div>
+    </nav>
+
+    <div id='block' class="container">
+        {% block content %}
+
+        {% endblock %}
+    </div>
 
 </body>
 </html>

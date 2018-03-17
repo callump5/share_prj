@@ -28,7 +28,7 @@ class Staff_Details(models.Model):
 
     user = models.ForeignKey(User, related_name='staff_profile')
     bio = HTMLField()
-    staff_image = models.ImageField(upload_to=upload_staff_img, blank=True, null=True)
+    staff_image = models.ImageField(blank=True, null=True)
 
     def __unicode__(self):
         return self.user.username
@@ -38,8 +38,10 @@ class Student_Img(models.Model):
 
     title = models.CharField(max_length=200)
     bio = HTMLField()
-    image = models.ImageField(upload_to=upload_student_img, blank=True, null=True)
+    image = models.ImageField(blank=True, null=True)
 
     def __unicode__(self):
         return self.title
 
+
+# upload_to=upload_student_img
