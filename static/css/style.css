@@ -13,6 +13,7 @@ nav {
 
     display: flex;
     flex-direction: row;
+    z-index: 100px;
 }
 
 .brand {
@@ -86,7 +87,8 @@ nav {
 /* Home */
 
 body {
-    background-image: url("/static/imgs/share-border1.jpg");
+    background-image: url("/static/imgs/background.png");
+    background-position-y: 150px;
 }
 
 .container {
