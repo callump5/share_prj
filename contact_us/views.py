@@ -7,9 +7,12 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from .forms import Contact_Form
 
+from .models import Staff_Contact
 # Create your views here.
 
 def contact_us(request):
+
+    contacts = Staff_Contact.objects.all()
 
     if request.method == 'POST':
 
@@ -41,7 +44,8 @@ def contact_us(request):
 
         contact_form = Contact_Form()
 
-    return render(request, 'contact/contact-form.html', {'form': contact_form})
+    return render(request, 'contact/contact-form.html', {'form': contact_form,
+                                                         'contacts': contacts})
 
 
 

@@ -1,9 +1,31 @@
 {% extends "home/index.html" %}
 {% block content %}
-    {% load bootstrap_tags %}
-    <form method="POST">
-        {% csrf_token %}
-        {{ form | as_bootstrap }}
-        <button type="submit" class="btn">Save</button>
-    </form>
+
+    <h1 class="title">Get In Touch!</h1>
+
+    <div class="flex">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.3931757105975!2d0.4818521157726101!3d51.57935707964701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8c41816dc3cd9%3A0xc6ad3e05829b688f!2sShare!5e0!3m2!1sen!2suk!4v1521741262390"frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <div class="form">
+            {% load bootstrap_tags %}
+            <form method="POST">
+                {% csrf_token %}
+                {{ form | as_bootstrap }}
+                <button type="submit" class="my-btn">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="contacts">
+        {% for contact in contacts %}
+            <div class="col-sm-3">
+                <p>{{ contact.user.get_full_name }}</p>
+                <p>{{ contact.number }}</p>
+                <p>{{ contact.email }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
 {% endblock %}

@@ -4,22 +4,37 @@
     {% block head_js %}
        <script src="{% static 'js/tinymce/tinymce.min.js' %}"></script>
        <script>
-           tinyMCE.init({mode: "textareas", theme: 'modern', plugins: 'paste'})
+           tinyMCE.init({mode: "textareas", theme: 'modern', plugins: 'paste'});
+
+            $(document).ready(function () {
+                i = 1;
+
+                $('.testimony').each(function () {
+                    $(this).addClass('anim' + i);
+                    i += 1;
+                });
+
+            });
        </script>
     {% endblock %}
 
     {% block content %}
-
-        {% for testimony in list %}
-            <div class="testimony">
-                <h2>{{ testimony }}</h2>
-            <br>
-
-                {% autoescape off %}
-                    {{ testimony.content }}
-                {% endautoescape %}
+        <h1 class="title">What Our Friends Say!</h1>
+        <div class="blackbaord">
+            <div class="content-slider">
+                <div class="slider">
+                    <div class="mask">
+                        {% for testimony in list%}
+                            <div class="testimony">
+                                <h1>{{ testimony.title }}</h1>
+                                {% autoescape off %}
+                                    <p class="quote">{{ testimony.content }}</p>
+                                    <p class="source">{{ testimony.author }}</p>
+                                {% endautoescape %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
-
-        {% endfor %}
-
+        </div>
     {% endblock %}

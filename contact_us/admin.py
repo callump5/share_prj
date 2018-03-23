@@ -9,3 +9,4 @@ from .models import *
 
 admin.site.register(Status)
 admin.site.register(Contact_Info)
+admin.site.register(Staff_Contact)

@@ -16,7 +16,7 @@ class Status(models.Model):
 class Testimonial(models.Model):
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=200, default='Anonymous')
-    content = HTMLField()
+    content = HTMLField(max_length=500)
     status = models.ForeignKey(Status, related_name='review_status', default=1)
 
     def __unicode__(self):

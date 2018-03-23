@@ -17,13 +17,6 @@ def upload_staff_img(instance, filename):
         filename_ext.lower(),
     )
 
-def upload_student_img(instance, filename):
-    filename_base, filename_ext = os.path.splitext(filename)
-    return 'student/%s%s' % (
-        now().strftime("%Y%m%d%H%M%S"),
-        filename_ext.lower(),
-    )
-
 class Staff_Details(models.Model):
 
     user = models.ForeignKey(User, related_name='staff_profile')
@@ -32,16 +25,6 @@ class Staff_Details(models.Model):
 
     def __unicode__(self):
         return self.user.username
-
-
-class Student_Img(models.Model):
-
-    title = models.CharField(max_length=200)
-    bio = HTMLField()
-    image = models.ImageField(blank=True, null=True)
-
-    def __unicode__(self):
-        return self.title
 
 
 # upload_to=upload_student_img

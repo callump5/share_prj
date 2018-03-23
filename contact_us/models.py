@@ -4,7 +4,17 @@ from __future__ import unicode_literals
 from django.db import models
 from tinymce.models import HTMLField
 
+
+from django.contrib.auth.models import User
 # Create your models here.
+
+class Staff_Contact(models.Model):
+    user = models.ForeignKey(User, related_name='staff_contact')
+    number = models.CharField(max_length=15)
+    email = models.CharField(max_length=30)
+
+    def __unicode__(self):
+        return self.user.first_name
 
 class Status(models.Model):
     status = models.CharField(max_length=200)
