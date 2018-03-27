@@ -1,5 +1,5 @@
 /* Font */
-h1, h2, h3, h4, a, p, li {
+h1, h2, h3, h4, a, p, li, button, label, textarea, input {
     font-family: 'Josefin Sans', sans-serif;
 }
 .testimony h1, .testimony p{
@@ -46,6 +46,10 @@ nav {
     box-shadow:2.5px 5px 10px grey;
     color: black;
     text-decoration: none;
+    background-color: #ff4cbf;
+}
+
+.btn {
     background-color: #ff4cbf;
 }
 
@@ -396,6 +400,15 @@ padding: 20px;
     }
     .content-slider {
         height: 400px;
+    }
+
+    .mynowrap {
+        flex-wrap: wrap;
+    }
+
+    .map {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
