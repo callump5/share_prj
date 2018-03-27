@@ -351,16 +351,9 @@ padding: 20px;
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 1292px) {
-    body {
-        background-color: blue;
-    }
-
-    /* Testimonials */
-
     .testimony h1 {
         font-size: 1.7em ;
     }
-
     .testimony p {
         font-size: 1.4em;
     }
@@ -368,11 +361,9 @@ padding: 20px;
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 767px) {
-
     body {
         overflow-x: hidden;
     }
-
     .container {
         width: 100vw;
         margin: 0;
@@ -380,38 +371,27 @@ padding: 20px;
         overflow-x: hidden;
         border: none;
     }
-
     .navbar-default {
         flex-direction: column;
     }
-
     .navbar-header {
         width: 100%
     }
-
     .brand {
         margin-right: 5vw;
     }
-
     .navbar-toggle{
         position: absolute;
         right: 75px;
         margin: 0;
     }
-
     .navbar-collapse {
         width: 100%;
     }
-
     .social {
         position: absolute;
         right: 0;
     }
-
-    .s-link p {
-        display: none;
-    }
-
     .content-slider {
         height: 400px;
     }
@@ -421,8 +401,6 @@ padding: 20px;
     .content-slider {
         height: 650px;
     }
-
-
     .page-img img {
         width: 80%;
         height: auto;
