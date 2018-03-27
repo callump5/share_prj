@@ -20,7 +20,7 @@
 
     <div class="contacts">
         {% for contact in contacts %}
-            <div class="col-sm-3">
+            <div class="col-sm-3 contact">
                 <p>{{ contact.user.get_full_name }}</p>
                 <p>{{ contact.number }}</p>
                 <p>{{ contact.email }}</p>

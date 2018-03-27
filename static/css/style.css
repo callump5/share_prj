@@ -343,11 +343,16 @@ textarea {
 }
 
 
+
+
 .contacts {
 margin: 30px 0;
 padding: 20px;
 }
 
+.contact {
+    margin: 15px;
+}
 
 .mynowrap {
     flex-wrap: nowrap;
