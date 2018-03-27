@@ -46,8 +46,6 @@ INSTALLED_APPS = [
     'accounts',
     'gallery',
     'tinymce',
-    'storages',
-    'dropbox',
     'contact_us',
     'django_forms_bootstrap',
 

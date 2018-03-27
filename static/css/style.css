@@ -10,35 +10,47 @@ h1, h2, h3, h4, a, p, li {
 
 /* Index */
 nav {
-    height: 150px;
     display: flex;
     flex-direction: row;
     z-index: 100;
-}
-
-.brand img {
-    height: 20vh;
-    width: auto;
     padding: 10px;
 }
 
-.nav-links{
-    width: 80%;
+.navbar-default {
+    background-color: transparent;
+    border: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+}
+.navbar-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.brand {
+    height: 20vh;
+    min-height: 120px;
+    width: auto;
+    padding: 10px 0;
+}
+
+.nav-links {
+    width: 80%;
     padding: 20px;
+    padding-right: 50px;
 }
 
 .nav-btn, .my-btn {
-    padding: 10px;
-    margin: 10px;
+    margin: 5px;
     box-shadow:2.5px 5px 10px grey;
     color: black;
     text-decoration: none;
     background-color: #ff4cbf;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: black;
 }
 .nav-btn:hover{
     text-decoration: none;
@@ -73,11 +85,12 @@ nav {
 }
 
 .social {
-    width: 15%;
+    position: absolute;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
+    margin-right: 20px;
 
 }
 .s-link{
@@ -119,6 +132,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 footer a {
@@ -218,6 +232,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .content-slider {
     width: 90%;
@@ -230,7 +245,7 @@ body {
 .slider {
     height: auto;
     width: 90%;
-    margin: 40px auto 0;
+    margin: 25px auto 0;
     overflow: visible;
     position: relative;
 }
@@ -258,7 +273,6 @@ body {
 
 p.source {
     text-align: right;
-    position: relative;
 }
 
 .slider .testimony.anim1 {
@@ -304,6 +318,7 @@ p.source {
 .flex {
     display: flex;
     margin: 0 20px;
+    flex-wrap: wrap;
 }
 
 .map {
@@ -343,19 +358,75 @@ padding: 20px;
     /* Testimonials */
 
     .testimony h1 {
-        font-size: 1.8em ;
+        font-size: 1.7em ;
     }
 
     .testimony p {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 }
 
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
-  }
+@media screen and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100vw;
+        margin: 0;
+        padding: 5px;
+        overflow-x: hidden;
+        border: none;
+    }
+
+    .navbar-default {
+        flex-direction: column;
+    }
+
+    .navbar-header {
+        width: 100%
+    }
+
+    .brand {
+        margin-right: 5vw;
+    }
+
+    .navbar-toggle{
+        position: absolute;
+        right: 75px;
+        margin: 0;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+    }
+
+    .social {
+        position: absolute;
+        right: 0;
+    }
+
+    .s-link p {
+        display: none;
+    }
+
+    .content-slider {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content-slider {
+        height: 650px;
+    }
+
+
+    .page-img img {
+        width: 80%;
+        height: auto;
+    }
 }
 /* Index Animation */
 
