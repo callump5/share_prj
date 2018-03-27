@@ -169,7 +169,7 @@ AWS_STORAGE_BUCKET_NAME = 'sharegallerymedia'
 
 """
 
-EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
