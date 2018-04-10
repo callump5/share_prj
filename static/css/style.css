@@ -90,7 +90,7 @@ nav {
 
 .social {
     position: absolute;
-    right: 0;
+    right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,6 +107,7 @@ nav {
     width: 30px;
     height: 30px;
     margin: 5px 5px;
+    box-shadow:2.5px 5px 10px grey;
 }
 
 .content {
@@ -178,6 +179,39 @@ body {
 .flex .col-sm-3 ul li {
     list-style-type: none;
     padding: 2.5px 0;
+}
+
+
+.info {
+    padding: 15px;
+
+}
+
+.info h2 {
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+
+.info:nth-child(1) {
+    background-color: #a8ff5b;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.info:nth-child(4) {
+    background-color: #b945ff;
+
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.info:nth-child(2) {
+    background-color: #ff4cbf;
+}
+
+.info:nth-child(3) {
+    background-color: #a8ff5b;
 }
 
 
@@ -375,6 +409,7 @@ padding: 20px;
     body {
         overflow-x: hidden;
     }
+
     .container {
         width: 100vw;
         margin: 0;
@@ -382,27 +417,34 @@ padding: 20px;
         overflow-x: hidden;
         border: none;
     }
+
     .navbar-default {
         flex-direction: column;
     }
+
     .navbar-header {
         width: 100%
     }
+
     .brand {
         margin-right: 5vw;
     }
-    .navbar-toggle{
+
+    .navbar-toggle {
         position: absolute;
-        right: 75px;
+        right: 100px;
         margin: 0;
     }
+
     .navbar-collapse {
         width: 100%;
     }
+
     .social {
         position: absolute;
-        right: 0;
+        right: 20px;
     }
+
     .content-slider {
         height: 400px;
     }
@@ -423,6 +465,32 @@ padding: 20px;
     }
     .page-img img {
         width: 90%;
+    }
+}
+
+/* Center Nav */
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    #navbarCollapse {
+        width: 100%;
+        margin-right: 100px;
+    }
+
+    .nav.navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
 /* Index Animation */
