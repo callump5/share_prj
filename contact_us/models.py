@@ -26,7 +26,7 @@ class Contact_Info(models.Model):
 
     status = models.ForeignKey(Status, related_name='contact_status', default=1)
     name = models.CharField(max_length=300)
-    number = models.CharField(max_length=10)
+    number = models.CharField(max_length=15)
     email = models.CharField(max_length=200)
 
     text = HTMLField()

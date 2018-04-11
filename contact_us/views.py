@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
 
 from django.core.mail import send_mail
@@ -38,7 +38,7 @@ def contact_us(request):
 
         messages.success(request, 'Thanks for getting in touch!')
 
-        return render(request, 'home/home.html')
+        return redirect('/')
 
     else:
 
