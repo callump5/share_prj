@@ -34,8 +34,7 @@ def contact_us(request):
                 'Contact Request',
                 message,
                 EMAIL_HOST_USER,
-                [NOTIFY_USER],
-                fail_silently=False,
+                [NOTIFY_USER]
             )
 
         messages.success(request, 'Thanks for getting in touch!')
