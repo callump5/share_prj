@@ -8,6 +8,8 @@ from django.core.mail import send_mail
 from .forms import Contact_Form
 
 from .models import Staff_Contact
+
+from share_prj.settings import EMAIL_HOST_USER
 # Create your views here.
 
 def contact_us(request):
@@ -32,7 +34,7 @@ def contact_us(request):
             send_mail(
                 'Contact Request',
                 message,
-                'clpullinger@gmail.com',
+                EMAIL_HOST_USER,
                 ['clpullinger@gmail.com']
             )
 
