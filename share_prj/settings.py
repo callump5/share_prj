@@ -174,4 +174,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'clpullinger@gmail.com'
 EMAIL_PORT = 587
 
-NOTIFY_USER = 'clpullinger@gmail.com'
+NOTIFY_USER = 'share.notify@outlook.com'
