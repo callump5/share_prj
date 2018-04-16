@@ -4,12 +4,12 @@ from __future__ import unicode_literals
 from django.shortcuts import render, redirect
 from django.contrib import messages
 
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMessage
 from .forms import Contact_Form
 
 from .models import Staff_Contact
 
-from share_prj.settings import EMAIL_HOST_USER
+from share_prj.settings import NOTIFY_USER
 # Create your views here.
 
 def contact_us(request):
@@ -31,12 +31,13 @@ def contact_us(request):
                       "Text:" + contact.text
 
 
-            send_mail(
+            email = EmailMessage(
                 'Contact Request',
                 message,
-                EMAIL_HOST_USER,
-                [EMAIL_HOST_USER]
+                to=[NOTIFY_USER]
             )
+
+            email.send()
 
         messages.success(request, 'Thanks for getting in touch!')
 
