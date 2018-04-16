@@ -35,7 +35,7 @@ def contact_us(request):
                 'Contact Request',
                 message,
                 EMAIL_HOST_USER,
-                ['clpullinger@gmail.com']
+                [EMAIL_HOST_USER]
             )
 
         messages.success(request, 'Thanks for getting in touch!')
