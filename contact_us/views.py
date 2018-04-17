@@ -32,7 +32,7 @@ def contact_us(request):
 
             subject = "Contact Request"
 
-            my_send_mail(message)
+            my_send_mail(contact.name, contact.email, contact.number, contact.text)
 
         messages.success(request, 'Thanks for getting in touch!')
 

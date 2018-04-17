@@ -2,13 +2,24 @@ from share_prj.settings import SENDER_EMAIL, SENDER_PASSWORD
 import smtplib
 
 
-def my_send_mail(msg):
+def my_send_mail(name, email, number, text):
+
+    msg = """
+        Hello, You have a new contact request from {}
+        
+        Email: {}
+        Number: {}
+        message: {}
+    """
+    msg.format(name, email, number, text)
     smtp = smtplib.SMTP('smtp.gmail.com')
     smtp.ehlo()
     smtp.starttls()
     smtp.ehlo()
     smtp.login(SENDER_EMAIL, SENDER_PASSWORD)
     recipiant = SENDER_EMAIL
+
+
 
     smtp.sendmail(SENDER_EMAIL, recipiant, msg)
 
