@@ -13,6 +13,8 @@ def my_send_mail(name, email, number, text):
         Message: """ + text + """
     """
     msg.format(name, email, number, text)
+
+    email_msg = "Subject: Contact Request \n\n" + msg.format()
     smtp = smtplib.SMTP('smtp.gmail.com')
     smtp.ehlo()
     smtp.starttls()
@@ -22,7 +24,7 @@ def my_send_mail(name, email, number, text):
 
 
 
-    smtp.sendmail(SENDER_EMAIL, recipiant, msg)
+    smtp.sendmail(SENDER_EMAIL, recipiant, email_msg)
 
     smtp.quit()
 

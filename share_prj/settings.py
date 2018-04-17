@@ -170,4 +170,5 @@ AWS_STORAGE_BUCKET_NAME = 'sharegallerymedia'
 """
 
 SENDER_EMAIL = 'share.contactme@gmail.com'
+SENDER_PASSWORD = 'Share123'
 
