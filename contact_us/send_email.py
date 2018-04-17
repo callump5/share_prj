@@ -20,7 +20,7 @@ def my_send_mail(name, email, number, text):
     smtp.starttls()
     smtp.ehlo()
     smtp.login(SENDER_EMAIL, SENDER_PASSWORD)
-    recipiant = SENDER_EMAIL
+    recipiant = 'share.enquiries@gmail.com'
 
 
 
@@ -29,4 +29,4 @@ def my_send_mail(name, email, number, text):
 
     smtp.quit()
 
-    
+
