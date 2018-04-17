@@ -5,11 +5,12 @@ import smtplib
 def my_send_mail(name, email, number, text):
 
     msg = """
-        Hello, You have a new contact request from {}
-        
-        Email: {}
-        Number: {}
-        message: {}
+        Hello, You have a new contact request from """ + name + """
+         
+        Name: """ + name + """       
+        Email: """ + email + """
+        Number: """ + number + """
+        Message: """ + text + """
     """
     msg.format(name, email, number, text)
     smtp = smtplib.SMTP('smtp.gmail.com')
