@@ -25,13 +25,15 @@
                 <div class="slider">
                     <div class="mask">
                         {% for testimony in list%}
-                            <div class="testimony">
-                                <h1>{{ testimony.title }}</h1>
-                                {% autoescape off %}
-                                    <p class="quote">{{ testimony.content }}</p>
-                                    <p class="source">{{ testimony.author }}</p>
-                                {% endautoescape %}
-                            </div>
+                            {% if testimony.id < 6 %}
+                                <div class="testimony">
+                                    <h1>{{ testimony.title }}</h1>
+                                    {% autoescape off %}
+                                        <p class="quote">{{ testimony.content }}</p>
+                                        <p class="source">{{ testimony.author }}</p>
+                                    {% endautoescape %}
+                                </div>
+                            {% endif %}
                         {% endfor %}
                     </div>
                 </div>

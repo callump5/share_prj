@@ -245,6 +245,9 @@ body {
     font-size: 2em;
     text-align: center;
 }
+.staff-profile p {
+    text-align: center;
+}
 
 .bio {
     width: 250px;
