@@ -22,6 +22,7 @@ class Staff_Details(models.Model):
 
     user = models.ForeignKey(User, related_name='staff_profile')
     bio = HTMLField()
+    role = models.CharField(max_length=200)
     staff_image = models.ImageField(upload_to=upload_staff_img, blank=True, null=True)
 
     def __unicode__(self):
