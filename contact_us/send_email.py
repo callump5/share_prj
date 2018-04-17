@@ -26,5 +26,7 @@ def my_send_mail(name, email, number, text):
 
     smtp.sendmail(SENDER_EMAIL, recipiant, email_msg)
 
+
     smtp.quit()
 
+    
