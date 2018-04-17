@@ -3,7 +3,7 @@ import smtplib
 
 
 def my_send_mail(msg):
-    smtp = smtplib.SMTP('smtp.gmail.com')
+    smtp = smtplib.SMTP('smtp.gmail.com', 465)
 
     smtp.login(SENDER_EMAIL, SENDER_PASSWORD)
 
