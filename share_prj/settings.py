@@ -161,13 +161,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min.js')
 
-"""
+
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 AWS_S3_SECURE_URLS = False       # use http instead of https
 AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related query parameters for requests
 AWS_STORAGE_BUCKET_NAME = 'sharegallerymedia'
 
-"""
 
 SENDER_EMAIL = 'share.contactme@gmail.com'
 SENDER_PASSWORD = 'Share123'

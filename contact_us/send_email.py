@@ -10,7 +10,7 @@ def my_send_mail(name, email, number, text):
         Name: """ + name + """       
         Email: """ + email + """
         Number: """ + number + """
-        Message: """ + text + """
+        Message: \n """ + text + """
     """
     msg.format(name, email, number, text)
 
