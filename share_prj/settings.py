@@ -171,7 +171,7 @@ AWS_STORAGE_BUCKET_NAME = 'sharegallerymedia'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'clpullinger@gmail.com'
+EMAIL_HOST_USER = 'share.contactme@gmail.com'
 EMAIL_PORT = 587
 
-NOTIFY_USER = 'share.notify@outlook.com'
+NOTIFY_USER = 'clpullinger@gmail.com'
