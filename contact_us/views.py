@@ -30,6 +30,8 @@ def contact_us(request):
                       "Email:" + contact.email + "\n" +\
                       "Text:" + contact.text
 
+            subject = "Contact Request"
+
             my_send_mail(message)
 
         messages.success(request, 'Thanks for getting in touch!')

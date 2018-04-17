@@ -9,6 +9,8 @@ def my_send_mail(msg):
     smtp.ehlo()
     smtp.login(SENDER_EMAIL, SENDER_PASSWORD)
     recipiant = SENDER_EMAIL
+
     smtp.sendmail(SENDER_EMAIL, recipiant, msg)
-    return
+
+    smtp.quit()
 
