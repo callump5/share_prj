@@ -9,7 +9,7 @@ from .forms import Contact_Form
 
 from .models import Staff_Contact
 
-from share_prj.settings import EMAIL_HOST_USER, NOTIFY_USER
+from .send_email import my_send_mail
 # Create your views here.
 
 def contact_us(request):
@@ -30,12 +30,7 @@ def contact_us(request):
                       "Email:" + contact.email + "\n" +\
                       "Text:" + contact.text
 
-            send_mail(
-                'Contact Request',
-                message,
-                EMAIL_HOST_USER,
-                [NOTIFY_USER]
-            )
+            my_send_mail(message)
 
         messages.success(request, 'Thanks for getting in touch!')
 
