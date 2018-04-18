@@ -9,3 +9,6 @@ from contact_us.models import Staff_Contact
 
 def get_home(request):
     return render(request, 'home/home.html')
+
+def get_an(request):
+    return render(request, 'googlec43a07e975a1e4ca.html')

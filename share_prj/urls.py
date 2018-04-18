@@ -24,6 +24,7 @@ from home import views as home_view
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
+
     # Tinymce
     url(r'', include('tinymce.urls')),
 
