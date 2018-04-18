@@ -90,6 +90,7 @@ WSGI_APPLICATION = 'share_prj.wsgi.application'
 
 
 """
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
