@@ -222,8 +222,14 @@ body {
     text-align: center;
     padding-bottom: 40px;
 }
+.sub-title {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
 
-#staff {
+.staff {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -362,6 +368,55 @@ p.source {
     padding: 5px 0;
 }
 
+.info-page {
+    display: flex;
+    flex-direction: row;
+}
+
+#corkboard {
+    background-image: url("/static/imgs/corkboard.jpg");
+    border: burlywood 10px solid;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+
+
+.notes {
+    background-color: #f4ff5f;
+    min-width: 260px;
+    max-width: 280px;
+    margin: 20px 10px;
+    font-size: 1.2em;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    transform: rotate(-2deg);
+}
+
+.pin-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.pin {
+    border: solid 5px #ff291d;
+    background-color: red;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    box-shadow: 0 3px 8px 1px #888888;
+}
+
+.notes:nth-child(even){
+background-color: #c4e3f3;
+    transform: rotate(3deg);
+}
+
+.notes:nth-child(3){
+    transform: rotate(-4deg);
+}
 
 
 /* Contact Us */
@@ -484,6 +539,20 @@ textarea {
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
         width: 100%;
+    }
+
+
+    .info-page {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #corkboard {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
     }
 }
 

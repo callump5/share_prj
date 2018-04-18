@@ -169,7 +169,6 @@ AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related quer
 
 AWS_STORAGE_BUCKET_NAME = 'sharegallerymedia'
 
-
 SENDER_EMAIL = 'share.contactme@gmail.com'
 SENDER_PASSWORD = 'Share123'
 

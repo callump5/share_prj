@@ -11,14 +11,32 @@
 
     {% autoescape off %}
 
-    {% for info_content in info %}
 
-        <div id="info-content">
-            {{ info_content.info }}
+        <div class="info-page">
+            <div>
+                {% for info_content in info %}
+
+                    <div id="info-content">
+                        {{ info_content.info }}
+                    </div>
+
+                {% endfor %}
+            </div>
+
+            <div id="corkboard">
+
+                {% for note in notes %}
+
+                    <div class="notes">
+                        <div class="pin-header">
+                            <div class='pin'></div>
+                        </div>
+                        <p>{{ note.content }} </p>
+                    </div>
+
+                {% endfor %}
+            </div>
         </div>
-
-    {% endfor %}
-
 
 
 {% endautoescape %}

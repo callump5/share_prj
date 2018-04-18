@@ -13,3 +13,13 @@ class Info_Content(models.Model):
     def __unicode__(self):
 
         return 'info'
+
+
+class Sticky_Note(models.Model):
+
+    title = models.CharField(max_length= 50)
+
+    content = models.CharField(max_length=300)
+
+    def __unicode__(self):
+        return self.title

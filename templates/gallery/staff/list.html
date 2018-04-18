@@ -50,24 +50,48 @@
 
         <h1 class="title">Meet Our Staff</h1>
 
-        <div id="staff">
-            {% for staff in staff %}
-                <div class="staff-profile">
-                    <div class="staff-details">
-                        <img class='img' src="{{ staff.staff_image.url }}">
+        <div class="staff">
+            {% for staff in staff.order_by %}
+                {% if 'Play Worker' not in staff.role %}
+                    <div class="staff-profile">
+                        <div class="staff-details">
+                            <img class='img' src="{{ staff.staff_image.url }}">
 
-                        {% autoescape off %}
-                            <div class="bio">
-                                <p>{{ staff.bio }}</p>
-                            </div>
-                        {% endautoescape %}
+                            {% autoescape off %}
+                                <div class="bio">
+                                    <p>{{ staff.bio }}</p>
+                                </div>
+                            {% endautoescape %}
+                        </div>
+                        <h1>{{ staff.user }}</h1>
+                        <p>{{ staff.role }}</p>
                     </div>
-                    <h1>{{ staff.user }}</h1>
-                    <p>{{ staff.role }}</p>
-
-                </div>
-
+                {% endif %}
             {% endfor %}
+        </div>
+
+        <h2 class="sub-title">Play Workers</h2>
+
+        <div class="staff">
+
+            {% for staff in staff %}
+                {% if 'Play Worker' in staff.role %}
+                    <div class="staff-profile">
+                        <div class="staff-details">
+                            <img class='img' src="{{ staff.staff_image.url }}">
+
+                            {% autoescape off %}
+                                <div class="bio">
+                                    <p>{{ staff.bio }}</p>
+                                </div>
+                            {% endautoescape %}
+                        </div>
+                        <h1>{{ staff.user }}</h1>
+                        <p>{{ staff.role }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
 
         </div>
 
