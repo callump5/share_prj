@@ -46,10 +46,10 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/share_prj/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state relative-caret-position="385">
+              <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
               <folding>
-                <marker date="1524056550493" expanded="true" signature="962:1202" ph="..." />
+                <marker date="1524056672573" expanded="true" signature="962:1202" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1550,13 +1550,6 @@
       <option name="presentableId" value="Default" />
       <updated>1517962523169</updated>
     </task>
-    <task id="LOCAL-00052" summary="staff gallery">
-      <created>1519267753272</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1519267753272</updated>
-    </task>
     <task id="LOCAL-00053" summary="staff gallery">
       <created>1519267890392</created>
       <option name="number" value="00053" />
@@ -1893,7 +1886,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524055113979</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Finshed!! I think!">
+      <created>1524056556907</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1524056556907</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2375,10 +2375,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/share_prj/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state relative-caret-position="385">
+          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding>
-            <marker date="1524056550493" expanded="true" signature="962:1202" ph="..." />
+            <marker date="1524056672573" expanded="true" signature="962:1202" ph="..." />
           </folding>
         </state>
       </provider>

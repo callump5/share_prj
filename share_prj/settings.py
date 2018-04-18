@@ -91,7 +91,6 @@ WSGI_APPLICATION = 'share_prj.wsgi.application'
 
 
 
-"""
 
 
 DATABASES = {
@@ -107,6 +106,8 @@ DATABASES = {
     'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
 
+
+"""
 
 
 # Password validation
