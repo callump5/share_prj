@@ -1,15 +1,14 @@
 {% extends 'home/index.html' %}
 
 
-{% block head_js %}
-
-    <meta name="description" content="Testimonials for respite care for disabled children. Children's respite in Basildon">
-    <title>Information</title>
-{% endblock %}
-
 {% load staticfiles %}
 
     {% block head_js %}
+
+
+    <meta name="description" content="Testimonials for respite care for disabled children. Children's respite in Basildon">
+    <title>Information</title>
+
        <script src="{% static 'js/tinymce/tinymce.min.js' %}"></script>
        <script>
            tinyMCE.init({mode: "textareas", theme: 'modern', plugins: 'paste'});
