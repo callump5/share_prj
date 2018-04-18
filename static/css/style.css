@@ -355,6 +355,15 @@ p.source {
 
 
 
+/* Information */
+
+#info-content p {
+    font-size: 1.4em;
+    padding: 5px 0;
+}
+
+
+
 /* Contact Us */
 
 .flex {

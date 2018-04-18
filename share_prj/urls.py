@@ -36,6 +36,10 @@ urlpatterns = [
     # Staff Details
     url(r'', include('gallery.urls')),
 
+    # Infomation
+
+    url(r'', include('information.urls')),
+
     # Contact Us
     url(r'', include('contact_us.urls')),
 

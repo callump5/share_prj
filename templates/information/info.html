@@ -1,0 +1,19 @@
+{% extends 'home/index.html' %}
+
+{% block content %}
+    <h1 class="title">Information</h1>
+
+    {% autoescape off %}
+
+    {% for info_content in info %}
+
+        <div id="info-content">
+            {{ info_content.info }}
+        </div>
+
+    {% endfor %}
+
+
+
+{% endautoescape %}
+{% endblock %}
