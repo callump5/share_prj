@@ -3,14 +3,24 @@
 
     <meta name="description" content="Respite care for disabled children. Children's respite in Basildon">
     <title>Share</title>
+
 {% endblock %}
+
 {% block content %}
 
     <h1 class="title">Welcome to Share. The Safe Haven & Respite Environment</h1>
 
     <div class="page-img">
-        <img src="/static/imgs/landing/back-edit.png">
+
+        {% for slide in slides %}
+            {% if slide.img %}
+                <img class='mySlides fade' src="{{ slide.img.url }}">
+            {% endif %}
+        {% endfor %}
     </div>
+    
+
+    
 
     <article id="landing">
         <h2>Do you have a disabled child? (aged 3-19 years)</h2>
@@ -51,15 +61,33 @@
                 <li>Playsation, Nitendo Wii & Computers!</li>
                 <li>Face Painting!</li>
             </ul>
-
-
-
-
-
-
-
         </div>
     </div>
+
+    <script type="text/javascript">
+        var slideIndex = 0;
+        carousel();
+
+
+        function carousel() {
+            var i;
+
+            var x = $(".mySlides");
+
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > x.length) {slideIndex = 1}
+
+            x[slideIndex-1].style.display = "block";
+
+            setTimeout(carousel, 6000); // Change image every 2 seconds
+        }
+    </script>
+
 
 {% endblock %}
 
