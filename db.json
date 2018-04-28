@@ -234,24 +234,6 @@
     }
 },
 {
-    "model": "auth.user",
-    "pk": 14,
-    "fields": {
-        "password": "pbkdf2_sha256$36000$WSG6YRdjX8Ck$QYGPh4veajfxkZN1GDwlzXwRMBLKPeNlREu58q0u0Lk=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "Callum",
-        "first_name": "Callum",
-        "last_name": "Pullinger",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2018-04-17T23:55:40Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
     "model": "sessions.session",
     "pk": "anjqr97crw9xxwxmi8k214n7uxu8ogo9",
     "fields": {
