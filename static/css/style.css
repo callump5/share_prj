@@ -1,5 +1,5 @@
 /* Font */
-h1, h2, h3, h4, a, p, li, button, label, textarea, input, span{
+h1, h2, h3, h4, a, p, li, button, label, textarea, input, span, .bio p span, .bio p{
     font-family: 'Josefin Sans', sans-serif;
 }
 .testimony h1, .testimony p{
