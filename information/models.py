@@ -3,6 +3,8 @@ from __future__ import unicode_literals
 
 from django.db import models
 from tinymce.models import HTMLField
+import os
+from django.utils.timezone import now
 
 # Create your models here.
 
@@ -23,3 +25,21 @@ class Sticky_Note(models.Model):
 
     def __unicode__(self):
         return self.title
+
+
+
+
+
+def upload_staff_img(instance, filename):
+    filename_base, filename_ext = os.path.splitext(filename)
+    return 'staff/%s%s' % (
+        now().strftime("%Y%m%d%H%M%S"),
+        filename_ext.lower(),
+    )
+
+class Sponsers(models.Model):
+    company = models.CharField(max_length=200)
+    img = models.ImageField(upload_to=upload_staff_img)
+
+    def __unicode__(self):
+        return self.company

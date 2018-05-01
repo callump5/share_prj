@@ -427,6 +427,19 @@ background-color: #c4e3f3;
     transform: rotate(-4deg);
 }
 
+.sponsers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.sponser img {
+    width: 200px;
+    height: auto;
+}
+
 
 /* Contact Us */
 

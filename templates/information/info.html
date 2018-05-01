@@ -37,6 +37,16 @@
                 {% endfor %}
             </div>
         </div>
+        
+        <div class="sponsers">
+            {% for sponser in sponsers %}
+                <div class="sponser">
+                    <img src="{{ sponser.img.url }}">
+                </div>
+            
+            {% endfor %}
+            
+        </div>
 
 
 {% endautoescape %}
