@@ -8,6 +8,17 @@ from django.utils.timezone import now
 
 # Create your models here.
 
+
+
+def upload_staff_img(instance, filename):
+    filename_base, filename_ext = os.path.splitext(filename)
+    return 'staff/%s%s' % (
+        now().strftime("%Y%m%d%H%M%S"),
+        filename_ext.lower(),
+    )
+
+
+
 class Info_Content(models.Model):
 
     info = HTMLField()
@@ -23,19 +34,14 @@ class Sticky_Note(models.Model):
 
     content = models.CharField(max_length=300)
 
+    img = models.ImageField(upload_to=upload_staff_img, null=True, blank=True)
+
     def __unicode__(self):
         return self.title
 
 
 
 
-
-def upload_staff_img(instance, filename):
-    filename_base, filename_ext = os.path.splitext(filename)
-    return 'staff/%s%s' % (
-        now().strftime("%Y%m%d%H%M%S"),
-        filename_ext.lower(),
-    )
 
 class Sponsers(models.Model):
     company = models.CharField(max_length=200)

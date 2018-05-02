@@ -31,6 +31,10 @@
                             <div class='pin'></div>
                         </div>
                         <p>{{ note.content }} </p>
+
+                        {% if note.img %}
+                            <img src="{{ note.img.url }}">
+                        {% endif %}
                     </div>
 
                 {% endfor %}

@@ -90,9 +90,6 @@ WSGI_APPLICATION = 'share_prj.wsgi.application'
 
 
 
-
-"""
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -106,6 +103,9 @@ DATABASES = {
 DATABASES = {
     'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
+
+
+"""
 
 
 
@@ -172,3 +172,8 @@ AWS_STORAGE_BUCKET_NAME = 'sharegallerymedia'
 
 SENDER_EMAIL = 'share.contactme@gmail.com'
 SENDER_PASSWORD = 'Share123'
+
+from login import  AWS_SECRET_ACCESS_KEY, AWS_ACCESS_KEY_ID
+
+AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY
