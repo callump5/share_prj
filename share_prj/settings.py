@@ -90,6 +90,10 @@ WSGI_APPLICATION = 'share_prj.wsgi.application'
 
 
 
+"""
+
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -103,10 +107,6 @@ DATABASES = {
 DATABASES = {
     'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
-
-
-"""
-
 
 
 
