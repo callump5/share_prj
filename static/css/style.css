@@ -254,8 +254,8 @@ body {
     margin: 5px;
 }
 .staff-details img {
-    width: 250px;
-    height:300px;
+    width: 200px;
+    height:250px;
 }
 .staff-profile h1 {
     font-size: 2em;
@@ -266,12 +266,13 @@ body {
 }
 
 .bio {
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     text-align: center;
     opacity: 0;
     position: absolute;
     padding: 50px 10px;
+    font-size: 0.8em;
 
     display: none;
     flex-direction: column;
@@ -280,6 +281,7 @@ body {
     background-color: #5bc0de;
     z-index: 20;
 }
+
 
 
 
@@ -334,33 +336,33 @@ p.source {
 }
 
 .slider .testimony.anim1 {
-    -moz-animation: cycle 15s linear infinite;
-    -webkit-animation: cycle 15s linear infinite;
-    animation: cycle 15s linear infinite;
+    -moz-animation: cycle 25s linear infinite;
+    -webkit-animation: cycle 25s linear infinite;
+    animation: cycle 25s linear infinite;
 }
 
 .slider .testimony.anim2 {
-    -moz-animation: cycle2 15s linear infinite;
-    -webkit-animation: cycle2 15s linear infinite;
-    animation: cycle2 15s linear infinite;
+    -moz-animation: cycle2 25s linear infinite;
+    -webkit-animation: cycle2 25s linear infinite;
+    animation: cycle2 25s linear infinite;
 }
 
 .slider .testimony.anim3 {
-    -moz-animation: cycle3 15s linear infinite;
-    -webkit-animation: cycle3 15s linear infinite;
-     animation: cycle3 15s linear infinite;
+    -moz-animation: cycle3 25s linear infinite;
+    -webkit-animation: cycle3 25s linear infinite;
+     animation: cycle3 25s linear infinite;
 }
 
 .slider .testimony.anim4 {
-    -moz-animation: cycle4 15s linear infinite;
-    -webkit-animation: cycle4 15s linear infinite;
-    animation: cycle4 15s linear infinite;
+    -moz-animation: cycle4 25s linear infinite;
+    -webkit-animation: cycle4 25s linear infinite;
+    animation: cycle4 25s linear infinite;
 }
 
 .slider .testimony.anim5 {
-    -moz-animation: cycle5 15s linear infinite;
-    -webkit-animation: cycle5 15s linear infinite;
-    animation: cycle5 15s linear infinite;
+    -moz-animation: cycle5 25s linear infinite;
+    -webkit-animation: cycle5 25s linear infinite;
+    animation: cycle5 25s linear infinite;
 }
 
 .slider:hover .testimony{
@@ -401,12 +403,17 @@ p.source {
     padding: 0 10px;
     padding-bottom: 20px;
     transform: rotate(-2deg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .notes img {
-    width: 220px;
+    width: 200px;
     height: auto;
     padding: 5px;
+    justify-content: center;
 }
 
 .pin-header {
@@ -443,7 +450,7 @@ background-color: #c4e3f3;
     justify-content: space-between;
 }
 .sponser img {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
