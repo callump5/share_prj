@@ -7,6 +7,14 @@ h1, h2, h3, h4, a, p, li, button, label, textarea, input {
 }
 
 
+/* Variabled */
+:root {
+    --theme-colour1: #ff4cbf;
+    --theme-colour2: #a8ff5b;
+    --theme-colour3: #b945ff;;
+    --theme-colour4: red;
+}
+
 
 /* Index */
 nav {
@@ -46,11 +54,11 @@ nav {
     box-shadow:2.5px 5px 10px grey;
     color: black;
     text-decoration: none;
-    background-color: #ff4cbf;
+    background-color: var(--theme-colour1);
 }
 
 .btn {
-    background-color: #ff4cbf;
+    background-color: var(--theme-colour1);
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -65,27 +73,27 @@ nav {
 }
 
 .nav-btn:nth-child(1){
-    background-color: #b945ff;
+    background-color: var(--theme-colour3);
 }
 
 .nav-btn:nth-child(2){
-    background-color: #ff4cbf;
+    background-color: var(--theme-colour1);
 }
 
 .nav-btn:nth-child(3) {
-    background-color: #a8ff5b;
+    background-color: var(--theme-colour2);
 }
 
 .nav-btn:nth-child(4) {
-    background-color: #b945ff;
+    background-color: var(--theme-colour3);
 }
 
 .nav-btn:nth-child(5) {
-    background-color: #ff4cbf;
+    background-color: var(--theme-colour1);
 }
 
 .nav-btn:nth-child(6) {
-    background-color: #a8ff5b;
+    background-color: var(--theme-colour2);
 }
 
 .social {
@@ -204,24 +212,24 @@ body {
 
 
 .info:nth-child(1) {
-    background-color: #a8ff5b;
+    background-color: var(--theme-colour2);
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
 
 .info:nth-child(4) {
-    background-color: #b945ff;
+    background-color: var(--theme-colour3);
 
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 .info:nth-child(2) {
-    background-color: #ff4cbf;
+    background-color: var(--theme-colour1);
 }
 
 .info:nth-child(3) {
-    background-color: #a8ff5b;
+    background-color: var(--theme-colour2);
 }
 
 
@@ -248,7 +256,9 @@ body {
 }
 
 .staff-profile {
+    margin: 0 5px;
     margin-bottom: 15px;
+    padding: 5px;
 }
 .staff-details {
     margin: 5px;
@@ -282,6 +292,19 @@ body {
     z-index: 20;
 }
 
+
+.staff-profile:nth-child(1n+1){
+    background-color: var(--theme-colour1);
+}
+.staff-profile:nth-child(2n+2){
+background-color: var(--theme-colour3);
+}
+.staff-profile:nth-child(3n+3){
+background-color: var(--theme-colour2);
+}
+.staff-profile:first-child{
+    background-color: var(--theme-colour2);
+}
 
 
 
