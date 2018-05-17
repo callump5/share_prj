@@ -12,7 +12,7 @@
 
 
         <div class="info-page">
-            <div>
+            <article>
                 {% for info_content in info %}
 
                     <div id="info-content">
@@ -20,13 +20,13 @@
                     </div>
 
                 {% endfor %}
-            </div>
+            </article>
 
-            <div id="corkboard">
+            <article id="corkboard">
 
                 {% for note in notes %}
 
-                    <div class="notes">
+                    <aside class="notes">
                         <div class="pin-header">
                             <div class='pin'></div>
                         </div>
@@ -35,10 +35,10 @@
                         {% if note.img %}
                             <img src="{{ note.img.url }}">
                         {% endif %}
-                    </div>
+                    </aside>
 
                 {% endfor %}
-            </div>
+            </article>
         </div>
         
         <div class="sponsers">
@@ -48,7 +48,6 @@
                 </div>
             
             {% endfor %}
-            
         </div>
 
 
