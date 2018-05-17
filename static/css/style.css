@@ -2,8 +2,9 @@
 h1, h2, h3, h4, a, p, li, button, label, textarea, input {
     font-family: 'Josefin Sans', sans-serif;
 }
-.testimony h1, .testimony p{
+.testimony h1, .testimony p, .help-chalk  {
     font-family: 'Indie Flower', cursive;
+    color: white;
 }
 
 
@@ -343,6 +344,20 @@ background-color: var(--theme-colour2);
     list-style: none;
     color: white;
 }
+
+.help-chalk {
+    position: relative;
+    color: white;
+}
+
+.help-chalk {
+    float: right;
+    font-size: 1.4em;
+}
+
+.testimony{
+    height: 100%;
+}
 .testimony h1 {
     padding-top: 10px;
     font-size: 1.8em;
@@ -356,6 +371,10 @@ background-color: var(--theme-colour2);
 
 p.source {
     text-align: right;
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+
 }
 
 .slider .testimony.anim1 {
