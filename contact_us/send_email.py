@@ -1,4 +1,4 @@
-from settings.base import SENDER_EMAIL, SENDER_PASSWORD
+from new_settings.base import SENDER_EMAIL, SENDER_PASSWORD
 import smtplib
 
 

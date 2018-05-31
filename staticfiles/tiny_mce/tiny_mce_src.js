@@ -584,7 +584,7 @@ tinymce.create('tinymce.util.Dispatcher', {
 			// Trim whitespace
 			u = tinymce.trim(u);
 
-			// Default settings
+			// Default new_settings
 			s = t.settings = s || {};
 
 			// Strange app protocol that isn't http/https or local anchor
@@ -978,7 +978,7 @@ tinymce.create('static tinymce.util.XHR', {
 				w.setTimeout(ready, 10);
 		};
 
-		// Default settings
+		// Default new_settings
 		o.scope = o.scope || this;
 		o.success_scope = o.success_scope || o.scope;
 		o.error_scope = o.error_scope || o.scope;
@@ -3177,7 +3177,7 @@ tinymce.html.Styles = function(settings, schema) {
 		if (settings.fix_self_closing !== false)
 			settings.fix_self_closing = true;
 
-		// Add handler functions from settings and setup default handlers
+		// Add handler functions from new_settings and setup default handlers
 		tinymce.each('comment cdata text start end pi doctype'.split(' '), function(name) {
 			if (name)
 				self[name] = settings[name] || noop;
@@ -17363,7 +17363,7 @@ tinymce.ForceBlocks = function(editor) {
 			var startNode;
 
 			function matchParents(node) {
-				// Find first node with similar format settings
+				// Find first node with similar format new_settings
 				node = dom.getParent(node, function(node) {
 					return !!matchNode(node, name, vars, true);
 				});

@@ -17,13 +17,12 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.static import serve
 
-import settings.base
+import new_settings.base
 
 from home import views as home_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
 
     # Tinymce
     url(r'', include('tinymce.urls')),
@@ -45,9 +44,9 @@ urlpatterns = [
     url(r'', include('contact_us.urls')),
 
     # Static
-    url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.base.STATIC_ROOT}),
+    url(r'^static/(?P<path>.*)$', serve, {'document_root': new_settings.base.STATIC_ROOT}),
 
     # Media Root
-    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.base.MEDIA_ROOT}),
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': new_settings.base.MEDIA_ROOT}),
 
 ]

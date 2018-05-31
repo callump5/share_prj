@@ -140,7 +140,7 @@
 					if (s.theme_advanced_toolbar_location === 'external')
 						s.theme_advanced_toolbar_location = 'top';
 
-					tinyMCE.oldSettings = tinyMCE.settings; // Store old settings, the Editor constructor overwrites them
+					tinyMCE.oldSettings = tinyMCE.settings; // Store old new_settings, the Editor constructor overwrites them
 					t.fullscreenEditor = new tinymce.Editor('mce_fullscreen', s);
 					t.fullscreenEditor.onInit.add(function() {
 						t.loadState(t.fullscreenEditor);
@@ -202,7 +202,7 @@
 					DOM.setStyle(DOM.doc.body, 'overflow', settings.fullscreen_overflow);
 					DOM.win.scrollTo(settings.fullscreen_scrollx, settings.fullscreen_scrolly);
 				}
-				tinyMCE.settings = tinyMCE.oldSettings; // Restore old settings
+				tinyMCE.settings = tinyMCE.oldSettings; // Restore old new_settings
 
 				// clear variables
 				delete tinyMCE.oldSettings;
