@@ -1,4 +1,4 @@
-from share_prj.settings import SENDER_EMAIL, SENDER_PASSWORD
+from settings.base import SENDER_EMAIL, SENDER_PASSWORD
 import smtplib
 
 

@@ -17,7 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.static import serve
 
-from .settings import MEDIA_ROOT
+from settings.base import MEDIA_ROOT, STATIC_ROOT
 
 from home import views as home_view
 
@@ -43,6 +43,10 @@ urlpatterns = [
 
     # Contact Us
     url(r'', include('contact_us.urls')),
+
+    # Static
+
+    url(r'^static/(?P<path>.*)$', serve, {'document_root': STATIC_ROOT}),
 
     # Media Root
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
