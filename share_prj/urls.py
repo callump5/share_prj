@@ -45,7 +45,6 @@ urlpatterns = [
     url(r'', include('contact_us.urls')),
 
     # Static
-
     url(r'^static/(?P<path>.*)$', serve, {'document_root': STATIC_ROOT}),
 
     # Media Root
