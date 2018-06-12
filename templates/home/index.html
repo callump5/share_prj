@@ -99,6 +99,17 @@
     </footer>
 
 
+<script type="text/javascript">
+
+    $('img').each(function () {
+        $(this).attr("src", $(this).attr("src").replace("http://", "https://"));
+        var link = $('img').attr('src')
+        console.log(link)
+    })
+
+
+</script>
+
 </body>
 </html>
 

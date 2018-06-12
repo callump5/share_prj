@@ -2,3 +2,4 @@
 share_env
 aws_login
 venv
+aws_login.py
