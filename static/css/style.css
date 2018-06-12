@@ -531,6 +531,15 @@ textarea {
     margin: 15px;
 }
 
+.gdpr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.gdpr input{
+    margin-right: 25px;
+}
 .mynowrap {
     flex-wrap: nowrap;
 }
