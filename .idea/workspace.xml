@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0bbce92-bc90-4215-a000-a0a446429cc5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/cookies/migrations/0002_privacy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookies/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookies/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cookies/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cookies/cookies.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cookies/cookies.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,11 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookies.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cookies.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/cookies/cookies.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="187">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cookies/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cookies/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -197,12 +206,12 @@
         <option value="$PROJECT_DIR$/home/views.py" />
         <option value="$PROJECT_DIR$/cookies/urls.py" />
         <option value="$PROJECT_DIR$/new_settings/base.py" />
-        <option value="$PROJECT_DIR$/cookies/views.py" />
         <option value="$PROJECT_DIR$/share_prj/urls.py" />
-        <option value="$PROJECT_DIR$/templates/cookies/cookies.html" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/cookies/admin.py" />
         <option value="$PROJECT_DIR$/cookies/models.py" />
+        <option value="$PROJECT_DIR$/cookies/views.py" />
+        <option value="$PROJECT_DIR$/templates/cookies/cookies.html" />
       </list>
     </option>
   </component>
@@ -499,13 +508,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517962523169</updated>
-    </task>
-    <task id="LOCAL-00104" summary="Finshed!! I think!">
-      <created>1524059296821</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1524059296821</updated>
     </task>
     <task id="LOCAL-00105" summary="Finshed!! I think!">
       <created>1524059681358</created>
@@ -843,7 +845,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529315826123</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="privacy and cookies page">
+      <created>1529316442830</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1529316442830</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -868,6 +877,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1174" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3283082" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50340134" side_tool="true" weight="0.31687242" />
@@ -1235,16 +1245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cookies/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -1263,13 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cookies/cookies.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -1304,6 +1297,23 @@
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cookies/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cookies/cookies.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

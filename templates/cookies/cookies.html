@@ -6,14 +6,9 @@
 
     <div id="privacy">
 
-    {% for priv in privacy  %}
-        <p>{{ priv.info }}</p>
-
-    {% endfor %}
-
-
-        <p>Share is committed to protecting the privacy and security of your personal data.
-            This Privacy Notice informs you of the cookies we use on this website and what they do.</p>
+        {% for priv in privacy  %}
+            <p>{{ priv.info }}</p>
+        {% endfor %}
 
         {% for cookie in cookies %}
             {% autoescape off %}
