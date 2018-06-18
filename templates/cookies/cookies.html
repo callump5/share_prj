@@ -7,7 +7,9 @@
     <div id="privacy">
 
         {% for priv in privacy  %}
-            <p>{{ priv.info }}</p>
+            {% autoescape off %}
+                <p>{{ priv.info }}</p>
+            {% endautoescape %}
         {% endfor %}
 
         {% for cookie in cookies %}
