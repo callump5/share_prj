@@ -9,6 +9,8 @@ from models import *
 
 def cookies(request):
     cookies = Cookies.objects.all()
+    privacy = Privacy.objects.all()
 
-    return render(request, 'cookies/cookies.html', {'cookies':cookies})
+    return render(request, 'cookies/cookies.html', {'cookies':cookies,
+                                                    'privacy': privacy})
 
