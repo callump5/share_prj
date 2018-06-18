@@ -544,6 +544,41 @@ textarea {
     flex-wrap: nowrap;
 }
 
+/* Cookie Banner */
+#cookie-law {
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    right: 20%;
+    z-index: 500;
+    max-width:940px;
+    background: var(--theme-colour2);
+    margin: 0 auto;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+}
+
+#cookie-law p {
+    padding:10px;
+    font-size:1.7em;
+    font-weight:bold;
+    text-align:center;
+    margin:0;
+    color: var(--theme-colour1);
+}
+
+#cookie-law a{
+    color: var(--theme-colour3);
+}
+
+#privacy {
+    font-size: 1.3em;
+}
+
+.cookie {
+    margin: 20px 0;
+}
 /* Responsive design */
 
 /* On screens that are 992px or less, set the background color to blue */

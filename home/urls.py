@@ -6,8 +6,5 @@ import views
 
 
 urlpatterns = [
-
     url(r'$', views.get_home),
-
-
 ]

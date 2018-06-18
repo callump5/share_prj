@@ -43,6 +43,9 @@ urlpatterns = [
     # Contact Us
     url(r'', include('contact_us.urls')),
 
+    # Cokkies
+    url(r'', include('cookies.urls')),
+
     # Static
     url(r'^static/(?P<path>.*)$', serve, {'document_root': new_settings.base.STATIC_ROOT}),
 

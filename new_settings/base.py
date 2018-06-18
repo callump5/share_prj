@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'gallery',
     'tinymce',
     'contact_us',
+    'cookies',
     'django_forms_bootstrap',
 
 
