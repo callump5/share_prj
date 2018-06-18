@@ -6,6 +6,12 @@ from tinymce.models import HTMLField
 
 # Create your models here.
 
+class Privacy(models.Model):
+    info = HTMLField()
+
+    def __unicode__(self):
+        return 'privacy'
+
 class Cookies(models.Model):
     name = models.CharField(max_length=200)
     desription = HTMLField()
