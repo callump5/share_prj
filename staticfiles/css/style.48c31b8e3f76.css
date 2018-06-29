@@ -172,7 +172,7 @@ footer a {
 /* Home */
 
 body {
-    background-image: url("/static/imgs/background.png");
+    background-image: url("/static/imgs/background.36e6766f57e9.png");
     background-position-y: 150px;
 }
 
@@ -335,7 +335,7 @@ background-color: var(--theme-colour2);
 .content-slider {
     width: 90%;
     height: 360px;
-    background-image: url("/static/imgs/blackboard.jpg");
+    background-image: url("/static/imgs/blackboard.e64eb7ed434b.jpg");
     border: 5px solid burlywood;
     overflow: hidden;
 }
@@ -443,7 +443,7 @@ p.source {
 }
 
 #corkboard {
-    background-image: url("/static/imgs/corkboard.jpg");
+    background-image: url("/static/imgs/corkboard.67181c871a4d.jpg");
     border: burlywood 10px solid;
     padding: 10px;
     margin: 0 10px;

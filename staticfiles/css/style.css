@@ -136,6 +136,21 @@ nav {
     border-right: 2px solid black;
 }
 
+.panel-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    margin: 10px 0;
+}
+
+.number {
+    margin: 10px 0;
+}
+
 footer.container {
     min-height: 0;
 }
@@ -702,16 +717,20 @@ textarea {
 
     #navbarCollapse {
         width: 100%;
-        margin-right: 100px;
+        margin-right: 50px;
     }
 
     .nav.navbar-nav {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 
+   .navbar-default .navbar-nav > li > a {
+       padding: 7.5px;
+
+   }
 
 
 }
