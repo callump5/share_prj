@@ -28,7 +28,8 @@ SECRET_KEY = '1r@%#0jeyk7q5eh&$2s4-^8lgx1sb+312x%mt(clfefi8whau7'
 ALLOWED_HOSTS = [
     'share-basildon.herokuapp.com',
     '127.0.0.1',
-    'www.sharerespite.co.uk'
+    'www.sharerespite.co.uk',
+    'sharerespite.co.uk',
 ]
 
 
