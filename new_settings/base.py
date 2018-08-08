@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
     'share-basildon.herokuapp.com',
     '127.0.0.1',
     'www.sharerespite.co.uk',
-    'sharerespite.co.uk',
+    'sharerespite.co.uk'
 ]
 
 
