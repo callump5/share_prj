@@ -34,7 +34,7 @@ def my_send_mail(request, name, email, number, text):
 
 def authError(request):
 
-    messages.error(request, 'Sorry, Your email can not be sent at this time!')
+    messages.warning(request, 'Sorry, Your email can not be sent at this time!')
 
 
 

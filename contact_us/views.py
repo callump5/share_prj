@@ -31,7 +31,11 @@ def contact_us(request):
 
             subject = "Contact Request"
 
-            my_send_mail(request, contact.name, contact.email, contact.number, contact.text)
+            try:
+                my_send_mail(request, contact.name, contact.email, contact.number, contact.text)
+            except SMTPAuthenticationError as e:
+                authError(request)
+
 
 
         return redirect('/')
