@@ -2,7 +2,8 @@ from new_settings.base import SENDER_EMAIL, SENDER_PASSWORD
 import smtplib
 
 
-def my_send_mail(name, email, number, text):
+from django.contrib import messages
+def my_send_mail(request, name, email, number, text):
 
     msg = """
         Hello, You have a new contact request from """ + name + """
@@ -12,6 +13,7 @@ def my_send_mail(name, email, number, text):
         Number: """ + number + """
         Message: """ + text + """
     """
+
     msg.format(name, email, number, text)
 
     email_msg = "Subject: Contact Request \n\n" + msg.format()
@@ -22,11 +24,17 @@ def my_send_mail(name, email, number, text):
     smtp.login(SENDER_EMAIL, SENDER_PASSWORD)
     recipiant = 'share.enquiries@gmail.com'
 
-
+    messages.success(request, 'Thanks for getting in touch!')
 
     smtp.sendmail(SENDER_EMAIL, recipiant, email_msg)
 
-
     smtp.quit()
+
+
+def authError(request):
+
+    messages.warning(request, 'Sorry, Your email can not be sent at this time!')
+
+
 
 

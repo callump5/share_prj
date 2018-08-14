@@ -2,14 +2,13 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render, redirect
-from django.contrib import messages
 
-from django.core.mail import send_mail
+from .send_email import my_send_mail, authError
+from smtplib import SMTPAuthenticationError
+
 from .forms import Contact_Form
 
 from .models import Staff_Contact
-
-from .send_email import my_send_mail
 # Create your views here.
 
 def contact_us(request):
@@ -32,9 +31,12 @@ def contact_us(request):
 
             subject = "Contact Request"
 
-            my_send_mail(contact.name, contact.email, contact.number, contact.text)
+            try:
+                my_send_mail(request, contact.name, contact.email, contact.number, contact.text)
+            except SMTPAuthenticationError as e:
+                authError(request)
 
-        messages.success(request, 'Thanks for getting in touch!')
+
 
         return redirect('/')
 
