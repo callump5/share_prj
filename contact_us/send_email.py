@@ -13,7 +13,6 @@ def my_send_mail(request, name, email, number, text):
         Number: """ + number + """
         Message: """ + text + """
     """
-
     msg.format(name, email, number, text)
 
     email_msg = "Subject: Contact Request \n\n" + msg.format()
@@ -26,14 +25,16 @@ def my_send_mail(request, name, email, number, text):
 
     messages.success(request, 'Thanks for getting in touch!')
 
+
     smtp.sendmail(SENDER_EMAIL, recipiant, email_msg)
+
 
     smtp.quit()
 
 
 def authError(request):
 
-    messages.warning(request, 'Sorry, Your email can not be sent at this time!')
+    messages.error(request, 'Sorry, Your email can not be sent at this time!')
 
 
 
