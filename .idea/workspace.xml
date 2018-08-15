@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0bbce92-bc90-4215-a000-a0a446429cc5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact_us/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/contact_us/send_email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact_us/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contact_us/views.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="send_email.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="send_email.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact_us/send_email.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="579">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -35,11 +33,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LOGO.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/imgs/LOGO.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="Logo2.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/imgs/Logo2.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact_us/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="646">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -68,7 +76,7 @@
       <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new_settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="68">
               <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -206,8 +214,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="163" />
-    <option name="width" value="1444" />
+    <option name="x" value="-7" />
+    <option name="width" value="814" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectView">
@@ -215,7 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,12 +242,24 @@
             </path>
             <path>
               <item name="share_prj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="share_prj" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="share_prj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="share_prj" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="share_prj" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,13 +506,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517962523169</updated>
-    </task>
-    <task id="LOCAL-00115" summary="Slideshow finished">
-      <created>1524931768420</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1524931768421</updated>
     </task>
     <task id="LOCAL-00116" summary="Slideshow finished">
       <created>1524932021984</created>
@@ -831,7 +843,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534251428620</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="Added contact form error handling for auth errors; incase google restricts due to suspicion login attempts">
+      <created>1534251584439</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1534251584439</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -855,24 +874,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="163" y="0" width="1444" height="867" extended-state="0" />
-    <editor active="true" />
+    <frame x="157" y="200" width="1444" height="867" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3283082" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5192802" side_tool="true" weight="0.20460704" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49409238" weight="0.4526749" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32784638" />
       <window_info anchor="bottom" id="Python Console" order="17" weight="0.32343236" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49409238" weight="0.4526749" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.4807198" visible="true" weight="0.20713305" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13583815" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.4807198" weight="0.20713305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13945086" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32919255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.39739415" />
-      <window_info anchor="right" id="Coverage" order="3" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="16" visible="true" weight="0.32784638" />
       <window_info anchor="bottom" id="Salesforce" order="2" weight="0.3298969" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="4" weight="0.32978722" />
@@ -885,7 +903,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32784638" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="16" visible="true" weight="0.32901135" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Salesforce" order="2" weight="0.3298969" />
@@ -951,23 +969,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/new_settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="e#329#338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media/student/20180220190942.png" />
     <entry file="file://$PROJECT_DIR$/media/student/20180220190932.png" />
     <entry file="file://$PROJECT_DIR$/media/images/testimg.jpg" />
@@ -1181,7 +1182,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new_settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -1256,9 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1711">
           <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <element signature="e#329#338#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1278,8 +1276,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contact_us/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="646">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
@@ -1288,13 +1286,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contact_us/send_email.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="579">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/imgs/LOGO.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/imgs/Logo2.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
